@@ -15,7 +15,7 @@ public class CombinationSum3 {
                            int k, int remainingSum, int start) {
 
         // Base cases
-        if (current.size() == k) {
+        if (current.size() == k ) {
             if (remainingSum == 0) {
                 result.add(new ArrayList<>(current)); // Important: create new list!
             }

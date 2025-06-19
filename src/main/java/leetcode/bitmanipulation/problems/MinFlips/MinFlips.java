@@ -33,6 +33,7 @@ public class MinFlips {
         return (a == 0) && (b == 0) && (c == 0);
     }
 
+
     public static void main(String[] args) {
 
         
