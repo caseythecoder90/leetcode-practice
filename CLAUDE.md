@@ -13,6 +13,10 @@ mvn compile
 # Run a specific Java class with main method
 mvn exec:java -Dexec.mainClass="leetcode.pattern.problems.ProblemName.ClassName"
 
+# Examples:
+# mvn exec:java -Dexec.mainClass="leetcode.bitmanipulation.problems.SingleNumber.SingleNumber"
+# mvn exec:java -Dexec.mainClass="leetcode.backtracking.problems.LetterCombinations.LetterCombinations"
+
 # Clean and compile
 mvn clean compile
 ```
@@ -31,6 +35,7 @@ src/main/java/leetcode/
 ├── bitmanipulation/
 ├── dynamicprogramming/
 ├── graph/
+├── heapsandpriorityqueues/
 ├── linkedlist/
 ├── slidingwindow/
 ├── trees/
