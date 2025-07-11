@@ -33,10 +33,10 @@ import java.util.*;
  * Time Complexity: O(n) total across all operations - each price is pushed and popped once
  * Space Complexity: O(n) - stack can contain up to n elements
  */
-class StockSpannerOptimal {
+class StockSpannerOptimal_01 {
     private Stack<int[]> stack;  // [price, span] pairs
     
-    public StockSpannerOptimal() {
+    public StockSpannerOptimal_01() {
         stack = new Stack<>();
     }
     
@@ -55,38 +55,7 @@ class StockSpannerOptimal {
     }
 }
 
-/**
- * YOUR CURRENT APPROACH: Linear Scan
- * 
- * This is what you implemented - simple but not optimal for large inputs.
- * Good for understanding the problem before learning advanced techniques.
- * 
- * Time Complexity: O(n²) worst case - scan all previous elements each time
- * Space Complexity: O(n) - store all prices
- */
-class StockSpannerSimple {
-    private List<Integer> stockPrices;
-
-    public StockSpannerSimple() {
-        stockPrices = new ArrayList<>();
-    }
-    
-    public int next(int price) {
-        stockPrices.add(price);
-
-        int span = 0;
-        // Scan backward until we find a price greater than current
-        for (int i = stockPrices.size() - 1; i >= 0; i--) {
-            if (stockPrices.get(i) <= price) {
-                span++;
-            } else {
-                break;  // Found greater price, stop scanning
-            }
-        }
-
-        return span;
-    }
-}
+// StockSpannerSimple is implemented in a separate file: StockSpannerSimple.java
 
 /**
  * IMPROVED SIMPLE APPROACH: With Early Termination
@@ -189,7 +158,7 @@ public class OnlineStockSpan {
         System.out.println();
         
         // Test optimal approach
-        StockSpannerOptimal optimal = new StockSpannerOptimal();
+        StockSpannerOptimal_01 optimal = new StockSpannerOptimal_01();
         long startTime = System.nanoTime();
         int[] optimalResults = new int[worstCase.length];
         for (int i = 0; i < worstCase.length; i++) {
@@ -227,7 +196,7 @@ public class OnlineStockSpan {
         System.out.println("=== Example 2: Testing All Approaches ===");
         int[] example2 = {31, 41, 48, 59, 79};
         
-        StockSpannerOptimal optimal = new StockSpannerOptimal();
+        StockSpannerOptimal_01 optimal = new StockSpannerOptimal_01();
         StockSpannerSimple simple = new StockSpannerSimple();
         
         System.out.println("Input: " + Arrays.toString(example2));

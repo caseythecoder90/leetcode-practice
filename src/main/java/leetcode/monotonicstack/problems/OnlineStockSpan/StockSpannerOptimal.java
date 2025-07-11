@@ -120,7 +120,7 @@ public class StockSpannerOptimal {
         int[] prices2 = {31, 41, 48, 59, 79};
         System.out.println("Input: " + Arrays.toString(prices2));
         
-        StockSpannerOptimal spanner2 = new StockSpannerOptimal();
+        StockSpannerOptimal_01 spanner2 = new StockSpannerOptimal_01();
         System.out.print("Output: [");
         for (int i = 0; i < prices2.length; i++) {
             if (i > 0) System.out.print(", ");
@@ -135,7 +135,7 @@ public class StockSpannerOptimal {
         int[] prices3 = {90, 80, 70, 60, 50};
         System.out.println("Input: " + Arrays.toString(prices3));
         
-        StockSpannerOptimal spanner3 = new StockSpannerOptimal();
+        StockSpannerOptimal_01 spanner3 = new StockSpannerOptimal_01();
         System.out.print("Output: [");
         for (int i = 0; i < prices3.length; i++) {
             if (i > 0) System.out.print(", ");
@@ -152,7 +152,7 @@ public class StockSpannerOptimal {
             largeInput[i] = i + 1;  // Increasing sequence (worst case)
         }
         
-        StockSpannerOptimal spannerPerf = new StockSpannerOptimal();
+        StockSpannerOptimal_01 spannerPerf = new StockSpannerOptimal_01();
         long startTime = System.nanoTime();
         
         for (int price : largeInput) {
