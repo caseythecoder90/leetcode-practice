@@ -89,3 +89,24 @@ This file tracks your progress on individual LeetCode problems. For each problem
 | 2024-01-25 | 35 min | Monotonic stack | ✅ | Much cleaner implementation |
 
 ---
+
+## [901] Online Stock Span
+- **Difficulty**: Medium
+- **Pattern**: Monotonic Stack
+- **First Attempt**: 2025-07-11
+- **Status**: ✅ Solved
+- **Attempts**: 2
+- **Solution Time**: 45 minutes total
+- **Notes**: First solved with for loop approach on my own but not optimal. Then studied the stack solution and implemented with AI assistance to understand the pattern better
+- **Approach**: Initially used for loop, then learned monotonic decreasing stack to track [price, span] pairs
+- **Time Complexity**: O(n) amortized (stack), O(n²) worst case (for loop)
+- **Space Complexity**: O(n)
+- **Tags**: monotonic-stack, stock-analysis, medium-practice, learning-progression
+
+### Attempt History
+| Date | Time Taken | Approach | Result | Notes |
+|------|------------|----------|--------|-------|
+| 2025-07-11 | 20 min | For loop (brute force) | ✅ | Worked but not optimal, solved independently |
+| 2025-07-11 | 25 min | Monotonic stack | ✅ | Better solution with AI assistance after studying pattern |
+
+---
