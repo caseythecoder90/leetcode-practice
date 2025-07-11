@@ -22,12 +22,19 @@ pattern/
 ## Patterns
 
 - Arrays
-- LinkedList
-- Trees
-- Graph
-- DynamicProgramming
 - Backtracking
+- BinarySearch
+- BitManipulation
+- DynamicProgramming
+- Graph
+- HashMapSet
+- HeapsAndPriorityQueues
+- Intervals
+- LinkedList
+- MonotonicStack
 - SlidingWindow
+- Trees
+- Trie
 - TwoPointers
 
 ## How to Use
