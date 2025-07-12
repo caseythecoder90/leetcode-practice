@@ -111,3 +111,23 @@ This file tracks your progress on individual LeetCode problems. For each problem
 | 2025-07-11 | 15 min | Review and practice | ✅ | Reviewed problem and implemented again for reinforcement |
 
 ---
+
+## [435] Non-overlapping Intervals
+- **Difficulty**: Medium
+- **Pattern**: Intervals/Greedy
+- **First Attempt**: 2025-07-12
+- **Status**: ✅ Solved
+- **Attempts**: 1
+- **Solution Time**: 30 minutes
+- **Notes**: Greedy approach - sort by end time and count overlapping intervals to remove
+- **Approach**: Sort intervals by end time, track last non-overlapping interval, count removals needed
+- **Time Complexity**: O(n log n)
+- **Space Complexity**: O(1)
+- **Tags**: intervals, greedy-algorithm, medium-practice
+
+### Attempt History
+| Date | Time Taken | Approach | Result | Notes |
+|------|------------|----------|--------|-------|
+| 2025-07-12 | 30 min | Greedy (sort by end) | ✅ | Clean solution on first attempt |
+
+---
