@@ -151,3 +151,24 @@ This file tracks your progress on individual LeetCode problems. For each problem
 | 2025-07-12 | 25 min | Greedy (sort by end) | ✅ | Applied pattern from previous intervals problem |
 
 ---
+
+## [1161] Maximum Level Sum of a Binary Tree
+- **Difficulty**: Medium
+- **Pattern**: Trees/BFS (Breadth-First Search)
+- **First Attempt**: 2025-04-08
+- **Status**: ✅ Solved
+- **Attempts**: 2
+- **Solution Time**: 20 minutes (latest attempt)
+- **Notes**: Second time solving - after reviewing BFS traversal pattern, was able to solve independently. Need to memorize core patterns and data structures for tree problems.
+- **Approach**: Level-order traversal using Queue, calculate sum for each level, track maximum
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(w) where w is maximum width of tree
+- **Tags**: trees, bfs, level-order-traversal, pattern-memorization-needed, repeat-solve
+
+### Attempt History
+| Date | Time Taken | Approach | Result | Notes |
+|------|------------|----------|--------|-------|
+| 2025-04-08 | 35 min | BFS with Queue | ✅ | First time solving - took longer to work through the logic |
+| 2025-07-13 | 20 min | BFS with Queue | ✅ | Second solve after BFS pattern review - faster implementation |
+
+---
