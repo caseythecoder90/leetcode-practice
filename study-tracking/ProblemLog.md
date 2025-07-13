@@ -119,15 +119,35 @@ This file tracks your progress on individual LeetCode problems. For each problem
 - **Status**: ✅ Solved
 - **Attempts**: 1
 - **Solution Time**: 30 minutes
-- **Notes**: Greedy approach - sort by end time and count overlapping intervals to remove
+- **Notes**: Greedy approach - sort by end time and count overlapping intervals to remove. Understanding concepts but struggle to pick correct strategy initially.
 - **Approach**: Sort intervals by end time, track last non-overlapping interval, count removals needed
 - **Time Complexity**: O(n log n)
 - **Space Complexity**: O(1)
-- **Tags**: intervals, greedy-algorithm, medium-practice
+- **Tags**: intervals, greedy-algorithm, medium-practice, strategy-selection-challenge
 
 ### Attempt History
 | Date | Time Taken | Approach | Result | Notes |
 |------|------------|----------|--------|-------|
 | 2025-07-12 | 30 min | Greedy (sort by end) | ✅ | Clean solution on first attempt |
+
+---
+
+## [452] Minimum Number of Arrows to Burst Balloons
+- **Difficulty**: Medium
+- **Pattern**: Intervals/Greedy Point Coverage
+- **First Attempt**: 2025-07-12
+- **Status**: ✅ Solved
+- **Attempts**: 1
+- **Solution Time**: 25 minutes
+- **Notes**: Similar greedy strategy to Non-overlapping Intervals. Sort by end position and count minimum arrows. Concepts clear but strategy selection remains challenging.
+- **Approach**: Sort balloons by end position, track arrow positions, count minimum arrows needed
+- **Time Complexity**: O(n log n)
+- **Space Complexity**: O(1)
+- **Tags**: intervals, greedy-algorithm, point-coverage, medium-practice, strategy-selection-challenge
+
+### Attempt History
+| Date | Time Taken | Approach | Result | Notes |
+|------|------------|----------|--------|-------|
+| 2025-07-12 | 25 min | Greedy (sort by end) | ✅ | Applied pattern from previous intervals problem |
 
 ---
