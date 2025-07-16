@@ -30,11 +30,11 @@ This file tracks your progress on individual LeetCode problems. For each problem
 ## Problems by Difficulty
 
 ### Easy Problems ✅
-- Count: 0
-- Mastered: 0
+- Count: 3
+- Mastered: 1
 
 ### Medium Problems 🟡
-- Count: 0
+- Count: 8
 - Mastered: 0
 
 ### Hard Problems 🔴
@@ -250,5 +250,25 @@ This file tracks your progress on individual LeetCode problems. For each problem
 | Date | Time Taken | Approach | Result | Notes |
 |------|------------|----------|--------|-------|
 | 2025-07-16 | 8 min | Recursive DFS | ✅ | Clean recursive implementation |
+
+---
+
+## [103] Binary Tree Zigzag Level Order Traversal
+- **Difficulty**: Medium
+- **Pattern**: Trees/BFS (Breadth-First Search)
+- **First Attempt**: 2025-07-16
+- **Status**: ✅ Solved
+- **Attempts**: 1
+- **Solution Time**: 5 minutes
+- **Notes**: Quick solve using BFS with alternating direction flag. Used Collections.reverse() to handle right-to-left traversal for odd levels. Pattern recognition was immediate after practicing other BFS problems.
+- **Approach**: Standard BFS level-order traversal with direction alternation per level
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(w) where w is maximum width of tree
+- **Tags**: trees, bfs, zigzag-traversal, level-order-traversal, pattern-mastery
+
+### Attempt History
+| Date | Time Taken | Approach | Result | Notes |
+|------|------------|----------|--------|-------|
+| 2025-07-16 | 5 min | BFS with direction flag | ✅ | Fast solve with established BFS pattern knowledge |
 
 ---
