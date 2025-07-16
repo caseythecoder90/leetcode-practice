@@ -172,3 +172,83 @@ This file tracks your progress on individual LeetCode problems. For each problem
 | 2025-07-13 | 20 min | BFS with Queue | ✅ | Second solve after BFS pattern review - faster implementation |
 
 ---
+
+## [199] Binary Tree Right Side View
+- **Difficulty**: Medium
+- **Pattern**: Trees/BFS (Breadth-First Search)
+- **First Attempt**: 2025-07-15
+- **Status**: ✅ Solved
+- **Attempts**: 1
+- **Solution Time**: 13 minutes
+- **Notes**: Solved on first try after reviewing Binary Tree BFS notes. Pattern recognition was strong - immediately saw this as level-order traversal with rightmost node capture. Next attempt should use DFS approach for variety.
+- **Approach**: Level-order BFS traversal, capture only the last (rightmost) node from each level
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(w) where w is maximum width of tree
+- **Tags**: trees, bfs, level-order-traversal, pattern-recognition-success, try-dfs-next-time
+
+### Attempt History
+| Date | Time Taken | Approach | Result | Notes |
+|------|------------|----------|--------|-------|
+| 2025-07-15 | 13 min | BFS Level Order | ✅ | Quick solve with BFS pattern recognition, included DFS alternative for future practice |
+
+---
+
+## [102] Binary Tree Level Order Traversal
+- **Difficulty**: Medium
+- **Pattern**: Trees/BFS (Breadth-First Search)
+- **First Attempt**: 2025-07-16
+- **Status**: ✅ Solved
+- **Attempts**: 1
+- **Solution Time**: 15 minutes
+- **Notes**: Classic BFS level-order traversal problem. Used Queue to process nodes level by level, collecting values for each level in separate lists.
+- **Approach**: BFS with Queue, process each level completely before moving to next level
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(w) where w is maximum width of tree
+- **Tags**: trees, bfs, level-order-traversal, classic-problem
+
+### Attempt History
+| Date | Time Taken | Approach | Result | Notes |
+|------|------------|----------|--------|-------|
+| 2025-07-16 | 15 min | BFS Level Order | ✅ | Standard BFS implementation |
+
+---
+
+## [111] Minimum Depth of Binary Tree
+- **Difficulty**: Easy
+- **Pattern**: Trees/BFS (Breadth-First Search)
+- **First Attempt**: 2025-07-16
+- **Status**: ✅ Solved
+- **Attempts**: 1
+- **Solution Time**: 10 minutes
+- **Notes**: BFS approach is optimal for finding minimum depth as it stops at first leaf node found. Could also use DFS but BFS is more efficient for this specific problem.
+- **Approach**: BFS traversal, return depth when first leaf node is encountered
+- **Time Complexity**: O(n) worst case, but often much better
+- **Space Complexity**: O(w) where w is maximum width of tree
+- **Tags**: trees, bfs, minimum-depth, early-termination, easy-win
+
+### Attempt History
+| Date | Time Taken | Approach | Result | Notes |
+|------|------------|----------|--------|-------|
+| 2025-07-16 | 10 min | BFS Early Termination | ✅ | Efficient BFS solution |
+
+---
+
+## [226] Invert Binary Tree
+- **Difficulty**: Easy
+- **Pattern**: Trees/DFS (Depth-First Search)
+- **First Attempt**: 2025-07-16
+- **Status**: ✅ Solved
+- **Attempts**: 1
+- **Solution Time**: 8 minutes
+- **Notes**: Simple recursive DFS problem. Swap left and right children for each node, then recursively invert both subtrees.
+- **Approach**: Recursive DFS, swap left/right children at each node
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(h) where h is height of tree
+- **Tags**: trees, dfs, recursion, tree-manipulation, easy-win
+
+### Attempt History
+| Date | Time Taken | Approach | Result | Notes |
+|------|------------|----------|--------|-------|
+| 2025-07-16 | 8 min | Recursive DFS | ✅ | Clean recursive implementation |
+
+---

@@ -27,6 +27,13 @@ public class Intervals {
 
     }
 
+    public boolean overlap(int[] intervalOne, int[] intervalTwo) {
+        // overlap if A[0] < B[1] && B[0] < A[1] 
+
+        return intervalOne[0] < intervalTwo[1] && 
+            intervalTwo[0] < intervalOne[1];
+    }
+
     
 
 
