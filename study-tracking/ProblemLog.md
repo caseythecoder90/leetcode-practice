@@ -30,7 +30,7 @@ This file tracks your progress on individual LeetCode problems. For each problem
 ## Problems by Difficulty
 
 ### Easy Problems ✅
-- Count: 3
+- Count: 4
 - Mastered: 1
 
 ### Medium Problems 🟡
@@ -270,5 +270,25 @@ This file tracks your progress on individual LeetCode problems. For each problem
 | Date | Time Taken | Approach | Result | Notes |
 |------|------------|----------|--------|-------|
 | 2025-07-16 | 5 min | BFS with direction flag | ✅ | Fast solve with established BFS pattern knowledge |
+
+---
+
+## [27] Remove Element
+- **Difficulty**: Easy
+- **Pattern**: Arrays/Two Pointers
+- **First Attempt**: 2025-07-23
+- **Status**: ✅ Solved
+- **Attempts**: 1
+- **Solution Time**: 20 minutes
+- **Notes**: Solved independently but made initial mistakes. Used AI assistance to learn optimal fast/slow pointer approach. Good practice for in-place array modification pattern.
+- **Approach**: Two pointers technique - fast pointer scans array, slow pointer tracks position for valid elements
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(1)
+- **Tags**: arrays, two-pointers, in-place-modification, learning-progression, easy-win
+
+### Attempt History
+| Date | Time Taken | Approach | Result | Notes |
+|------|------------|----------|--------|---------|
+| 2025-07-23 | 20 min | Two pointers | ✅ | First attempt with corrections, learned optimal fast/slow pointer solution |
 
 ---
