@@ -30,15 +30,19 @@ This file tracks your progress on individual LeetCode problems. For each problem
 ## Problems by Difficulty
 
 ### Easy Problems ✅
-- Count: 4
+- Count: 7
 - Mastered: 1
 
 ### Medium Problems 🟡
-- Count: 8
+- Count: 11
 - Mastered: 0
 
 ### Hard Problems 🔴
 - Count: 0
+- Mastered: 0
+
+### SQL Problems 🗄️
+- Count: 1
 - Mastered: 0
 
 ---
@@ -290,5 +294,148 @@ This file tracks your progress on individual LeetCode problems. For each problem
 | Date | Time Taken | Approach | Result | Notes |
 |------|------------|----------|--------|---------|
 | 2025-07-23 | 20 min | Two pointers | ✅ | First attempt with corrections, learned optimal fast/slow pointer solution |
+| 2025-07-24 | 15 min | Two pointers (review) | ✅ | Review attempt, implemented with AI-suggested optimization approach |
+
+---
+
+## [26] Remove Duplicates from Sorted Array
+- **Difficulty**: Easy
+- **Pattern**: Arrays/Two Pointers
+- **First Attempt**: 2025-07-24
+- **Status**: ✅ Solved
+- **Attempts**: 1
+- **Solution Time**: 25 minutes (estimated)
+- **Notes**: Completed successfully. Another two pointers in-place modification problem similar to Remove Element.
+- **Approach**: Two pointers technique - slow pointer tracks position for unique elements, fast pointer scans array
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(1)
+- **Tags**: arrays, two-pointers, in-place-modification, sorted-array, easy-win
+
+### Attempt History
+| Date | Time Taken | Approach | Result | Notes |
+|------|------------|----------|--------|---------|
+| 2025-07-24 | ~25 min | Two pointers | ✅ | Successfully completed, building confidence with two pointer pattern |
+
+---
+
+## [151] Reverse Words in a String
+- **Difficulty**: Medium
+- **Pattern**: String Manipulation
+- **First Attempt**: 2025-07-24
+- **Status**: ✅ Solved
+- **Attempts**: 1
+- **Solution Time**: 30 minutes (estimated)
+- **Notes**: Completed successfully. String processing problem involving trimming, splitting, and reversing.
+- **Approach**: Split string into words, filter out empty strings, reverse array and join
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(n)
+- **Tags**: strings, string-processing, reverse-operations, medium-practice
+
+### Attempt History
+| Date | Time Taken | Approach | Result | Notes |
+|------|------------|----------|--------|---------|
+| 2025-07-24 | ~30 min | String split and reverse | ✅ | Successful completion of string manipulation problem |
+
+---
+
+## [80] Remove Duplicates from Sorted Array II
+- **Difficulty**: Medium
+- **Pattern**: Arrays/Two Pointers
+- **First Attempt**: 2025-07-24
+- **Status**: ✅ Solved
+- **Attempts**: 2
+- **Solution Time**: 35 minutes (estimated, second attempt)
+- **Notes**: Got stuck initially when tired, but successfully completed after returning with fresh mind. Complex variation allowing up to 2 duplicates requires careful counting logic.
+- **Approach**: Two pointers with counting logic - track position for valid elements allowing up to 2 occurrences
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(1)
+- **Tags**: arrays, two-pointers, in-place-modification, sorted-array, duplicate-handling, persistence-pays-off
+
+### Attempt History
+| Date | Time Taken | Approach | Result | Notes |
+|------|------------|----------|--------|---------|
+| 2025-07-24 | N/A | Attempted two pointers | ❌ | Got stuck when tired, need to revisit with fresh mind |
+| 2025-07-25 | ~35 min | Two pointers with counting | ✅ | Successfully completed after rest, counting logic for duplicates worked |
+
+---
+
+## [283] Move Zeroes
+- **Difficulty**: Easy
+- **Pattern**: Arrays/Two Pointers
+- **First Attempt**: 2025-07-25
+- **Status**: ✅ Solved
+- **Attempts**: 1
+- **Solution Time**: 20 minutes (estimated)
+- **Notes**: In-place array modification problem. Move all zeros to end while maintaining relative order of non-zero elements.
+- **Approach**: Two pointers - one for writing position of non-zero elements, one for scanning
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(1)
+- **Tags**: arrays, two-pointers, in-place-modification, element-rearrangement, easy-win
+
+### Attempt History
+| Date | Time Taken | Approach | Result | Notes |
+|------|------------|----------|--------|---------|
+| 2025-07-25 | ~20 min | Two pointers write/scan | ✅ | Successfully completed, good pattern practice |
+
+---
+
+## [238] Product of Array Except Self
+- **Difficulty**: Medium
+- **Pattern**: Arrays/Prefix Sum
+- **First Attempt**: Previous attempt (date unknown)
+- **Status**: ✅ Solved (Review)
+- **Attempts**: 2+ (struggled previously, solved successfully on review)
+- **Solution Time**: ~20 minutes (including 5 min debug + 1 min note refresh)
+- **Notes**: Had struggled with this problem previously. Needed brief note refresh on left/right products array approach, then solved successfully. Had variable mix-up (i vs n) in update statement that cost 5 extra minutes. Should learn alternative approach next time for more robust understanding.
+- **Approach**: Left and right products arrays - compute left products, then right products while building final result
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(1) extra space (not counting output array)
+- **Tags**: arrays, prefix-sum, product-computation, review-success, learn-alternative-approach
+
+### Attempt History
+| Date | Time Taken | Approach | Result | Notes |
+|------|------------|----------|--------|---------|
+| Previous | N/A | Unknown approach | ❌ | Struggled with this problem initially |
+| 2025-07-26 | ~20 min | Left/right products | ✅ | Solved after brief note refresh, had variable mix-up debug |
+
+---
+
+## [169] Majority Element
+- **Difficulty**: Easy
+- **Pattern**: Arrays/Hash Table
+- **First Attempt**: 2025-07-26
+- **Status**: ✅ Solved
+- **Attempts**: 1
+- **Solution Time**: 10 minutes
+- **Notes**: Solved quickly using HashMap approach. Good pattern recognition for frequency counting problems. Confident with HashMap solutions and can usually get working solution with this approach.
+- **Approach**: HashMap to count frequencies, return element with count > n/2
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(n)
+- **Tags**: arrays, hashmap, frequency-counting, majority-element, quick-solve, hashmap-strength
+
+### Attempt History
+| Date | Time Taken | Approach | Result | Notes |
+|------|------------|----------|--------|---------|
+| 2025-07-26 | 10 min | HashMap frequency counting | ✅ | Quick solve, good HashMap pattern recognition |
+
+---
+
+## [1757] Recyclable and Low Fat Products
+- **Difficulty**: Easy
+- **Pattern**: SQL/Database
+- **First Attempt**: 2025-07-24
+- **Status**: ✅ Solved
+- **Attempts**: 1
+- **Solution Time**: 15 minutes (estimated)
+- **Notes**: SQL problem focusing on filtering with multiple conditions. Part of expanding interview prep to include database skills.
+- **Approach**: SELECT with WHERE clause using AND condition
+- **Time Complexity**: N/A (SQL)
+- **Space Complexity**: N/A (SQL)
+- **Tags**: sql, database, filtering, multiple-conditions, interview-prep-expansion
+
+### Attempt History
+| Date | Time Taken | Approach | Result | Notes |
+|------|------------|----------|--------|---------|
+| 2025-07-24 | ~15 min | SQL WHERE clause | ✅ | Successfully completed SQL problem, expanding skill set |
 
 ---

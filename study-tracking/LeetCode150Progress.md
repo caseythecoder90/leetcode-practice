@@ -6,10 +6,10 @@
 
 ## Overall Progress
 - **Total Problems**: 150
-- **Completed**: 2
-- **Remaining**: 148
-- **Current Streak**: 2 days
-- **Best Streak**: 2 days
+- **Completed**: 7
+- **Remaining**: 143
+- **Current Streak**: 5 days
+- **Best Streak**: 5 days
 
 ## Daily Progress Log
 
@@ -18,8 +18,13 @@
 |------|---------|------------|---------|------|--------|-------|
 | 07/23 | Merge Sorted Array | Easy | Arrays/Two Pointers | ~20 min | ✅ | Solved independently but missed optimal O(1) space solution with reverse iteration - need to review this approach |
 | 07/23 | Remove Element | Easy | Arrays/Two Pointers | ~20 min | ✅ | Solved with corrections, learned fast/slow pointer optimization through AI assistance |
-| 07/25 | | | | | | |
-| 07/26 | | | | | | |
+| 07/24 | Remove Duplicates from Sorted Array | Easy | Arrays/Two Pointers | Est. 25 min | ✅ | Completed successfully |
+| 07/24 | Reverse Words in a String | Medium | String Manipulation | Est. 30 min | ✅ | Completed successfully |
+| 07/24 | Remove Duplicates from Sorted Array II | Medium | Arrays/Two Pointers | N/A | 🔄 | Got stuck, tired - need to return to this problem |
+| 07/25 | Remove Duplicates from Sorted Array II | Medium | Arrays/Two Pointers | Est. 35 min | ✅ | Completed successfully after returning with fresh mind |
+| 07/25 | Move Zeroes | Easy | Arrays/Two Pointers | Est. 20 min | ✅ | Completed successfully |
+| 07/26 | Majority Element | Easy | Arrays/Hash Table | 10 min | ✅ | Solved quickly with HashMap approach, good pattern recognition |
+| 07/27 | | | | | | |
 | 07/27 | | | | | | |
 | 07/28 | | | | | | |
 | 07/29 | | | | | | |
@@ -136,4 +141,4 @@
 
 ---
 
-*Last Updated: July 23, 2025*
+*Last Updated: July 26, 2025*
