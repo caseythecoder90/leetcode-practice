@@ -6,10 +6,10 @@
 
 ## Overall Progress
 - **Total Problems**: 150
-- **Completed**: 7
-- **Remaining**: 143
-- **Current Streak**: 5 days
-- **Best Streak**: 5 days
+- **Completed**: 9
+- **Remaining**: 141
+- **Current Streak**: 6 days
+- **Best Streak**: 6 days
 
 ## Daily Progress Log
 
@@ -25,7 +25,7 @@
 | 07/25 | Move Zeroes | Easy | Arrays/Two Pointers | Est. 20 min | ✅ | Completed successfully |
 | 07/26 | Majority Element | Easy | Arrays/Hash Table | 10 min | ✅ | Solved quickly with HashMap approach, good pattern recognition |
 | 07/27 | | | | | | |
-| 07/27 | | | | | | |
+| 07/28 | | | | | | |
 | 07/28 | | | | | | |
 | 07/29 | | | | | | |
 | 07/30 | | | | | | |
@@ -34,7 +34,8 @@
 ### August 2025
 | Date | Problem | Difficulty | Pattern | Time | Status | Notes |
 |------|---------|------------|---------|------|--------|-------|
-| 08/01 | | | | | | |
+| 08/01 | Best Time to Buy and Sell Stock II | Medium | Arrays/Greedy | ~45 min | ✅ | Learned greedy approach vs DP, created comprehensive study materials |
+| 08/01 | Jump Game | Medium | Arrays/Greedy | ~30 min | ✅ | Mastered reachability greedy pattern, excellent pattern recognition practice |
 | 08/02 | | | | | | |
 | 08/03 | | | | | | |
 | 08/04 | | | | | | |
@@ -141,4 +142,4 @@
 
 ---
 
-*Last Updated: July 26, 2025*
+*Last Updated: August 01, 2025*
