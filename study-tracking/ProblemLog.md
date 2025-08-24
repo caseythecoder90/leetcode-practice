@@ -34,7 +34,7 @@ This file tracks your progress on individual LeetCode problems. For each problem
 - Mastered: 1
 
 ### Medium Problems 🟡
-- Count: 11
+- Count: 16
 - Mastered: 0
 
 ### Hard Problems 🔴
@@ -437,5 +437,107 @@ This file tracks your progress on individual LeetCode problems. For each problem
 | Date | Time Taken | Approach | Result | Notes |
 |------|------------|----------|--------|---------|
 | 2025-07-24 | ~15 min | SQL WHERE clause | ✅ | Successfully completed SQL problem, expanding skill set |
+
+---
+
+## [380] Insert Delete GetRandom O(1)
+- **Difficulty**: Medium
+- **Pattern**: Design/HashMap/Array
+- **First Attempt**: 2025-08-24
+- **Status**: ✅ Solved
+- **Attempts**: 2 (fixed implementation with AI assistance)
+- **Solution Time**: ~60 minutes total
+- **Notes**: Original solution failed on large test case due to removing from map but not from list. Learned critical "swap-with-last" technique for O(1) removal from ArrayList. HashMap + ArrayList combination is key insight.
+- **Approach**: HashMap (value→index) + ArrayList (values), swap element to remove with last element before removing from end
+- **Time Complexity**: O(1) average for all operations
+- **Space Complexity**: O(n)
+- **Tags**: design-data-structure, hashmap-arraylist-combo, swap-with-last-technique, o1-operations
+
+### Attempt History
+| Date | Time Taken | Approach | Result | Notes |
+|------|------------|----------|--------|-------|
+| 2025-08-24 | 30 min | HashMap + ArrayList (incorrect remove) | ❌ | Failed test case - only removed from map, not list |
+| 2025-08-24 | 30 min | HashMap + ArrayList (swap-with-last) | ✅ | Correct implementation learned with AI assistance |
+
+---
+
+## [274] H-Index
+- **Difficulty**: Medium
+- **Pattern**: Arrays/Sorting
+- **First Attempt**: Recent (date unknown)
+- **Status**: ✅ Solved
+- **Attempts**: 1+
+- **Solution Time**: ~30 minutes (estimated)
+- **Notes**: Array problem with comprehensive study materials created. Multiple solution approaches available in repository.
+- **Approach**: Sort array in descending order, find first position where citations[i] <= i+1
+- **Time Complexity**: O(n log n)
+- **Space Complexity**: O(1)
+- **Tags**: arrays, sorting, h-index, comprehensive-study-materials
+
+### Attempt History
+| Date | Time Taken | Approach | Result | Notes |
+|------|------------|----------|--------|-------|
+| Recent | ~30 min | Sorting approach | ✅ | Completed with study materials |
+
+---
+
+## [45] Jump Game II
+- **Difficulty**: Medium  
+- **Pattern**: Arrays/Greedy
+- **First Attempt**: Recent (date unknown)
+- **Status**: ✅ Solved
+- **Attempts**: 1+
+- **Solution Time**: ~45 minutes (estimated)
+- **Notes**: Advanced greedy problem with comprehensive study materials. Includes DP vs Greedy comparison and pattern recognition guides.
+- **Approach**: Greedy approach tracking current reach and farthest reach with jump counting
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(1)
+- **Tags**: arrays, greedy, jump-problems, advanced-greedy, dp-vs-greedy-comparison
+
+### Attempt History
+| Date | Time Taken | Approach | Result | Notes |
+|------|------------|----------|--------|-------|
+| Recent | ~45 min | Greedy approach | ✅ | Completed with comprehensive study materials |
+
+---
+
+## [189] Rotate Array
+- **Difficulty**: Medium
+- **Pattern**: Arrays/Cyclic Replacement
+- **First Attempt**: Recent (date unknown)
+- **Status**: ✅ Solved
+- **Attempts**: 1+
+- **Solution Time**: ~40 minutes (estimated)  
+- **Notes**: Multiple solution approaches with detailed study materials. Covers reverse method and cyclic replacement techniques.
+- **Approach**: Multiple approaches - reverse method and cyclic replacement
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(1)
+- **Tags**: arrays, rotation, cyclic-replacement, reverse-method, multiple-approaches
+
+### Attempt History
+| Date | Time Taken | Approach | Result | Notes |
+|------|------------|----------|--------|-------|
+| Recent | ~40 min | Multiple approaches | ✅ | Comprehensive study materials created |
+
+---
+
+## [134] Gas Station
+- **Difficulty**: Medium
+- **Pattern**: Arrays/Greedy
+- **First Attempt**: 2025-08-24
+- **Status**: ✅ Solved (with assistance)
+- **Attempts**: 2 (original solution had bugs, fixed with optimal approach)
+- **Solution Time**: ~90 minutes total
+- **Notes**: Original brute force approach had logical issues with loop conditions and state management. Learned optimal O(n) greedy solution with mathematical insight. Key: if sum(gas) >= sum(cost), exactly one solution exists.
+- **Approach**: Optimal greedy - track cumulative balance, reset start position when balance goes negative
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(1)
+- **Tags**: greedy-algorithm, circular-array, mathematical-insight, debugging-practice, optimal-solution-learning
+
+### Attempt History
+| Date | Time Taken | Approach | Result | Notes |
+|------|------------|----------|--------|-------|
+| 2025-08-24 | 45 min | Brute force (buggy) | ❌ | Loop condition and state management issues |
+| 2025-08-24 | 45 min | Optimal greedy | ✅ | Learned mathematical insight with AI assistance |
 
 ---

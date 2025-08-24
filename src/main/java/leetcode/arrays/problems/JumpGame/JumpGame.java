@@ -16,7 +16,7 @@ public class JumpGame {
     /**
      * OPTIMAL SOLUTION: Greedy Algorithm
      * 
-     * Approach: Track farthest reachable position
+     * Approach: Track the farthest reachable position
      * Time: O(n), Space: O(1)
      */
     public boolean canJump(int[] nums) {

@@ -111,7 +111,7 @@ public class MajorityElement {
             
             // Count how many numbers have this bit set
             for (int num : nums) {
-                if ((num >> bit) & 1) {
+                if (((num >> bit) & 1) == 1) {
                     count++;
                 }
             }
