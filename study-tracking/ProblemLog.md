@@ -30,11 +30,11 @@ This file tracks your progress on individual LeetCode problems. For each problem
 ## Problems by Difficulty
 
 ### Easy Problems ✅
-- Count: 7
+- Count: 13
 - Mastered: 1
 
 ### Medium Problems 🟡
-- Count: 16
+- Count: 22
 - Mastered: 0
 
 ### Hard Problems 🔴
@@ -539,5 +539,208 @@ This file tracks your progress on individual LeetCode problems. For each problem
 |------|------------|----------|--------|-------|
 | 2025-08-24 | 45 min | Brute force (buggy) | ❌ | Loop condition and state management issues |
 | 2025-08-24 | 45 min | Optimal greedy | ✅ | Learned mathematical insight with AI assistance |
+
+---
+
+## [6] Zigzag Conversion
+- **Difficulty**: Medium
+- **Pattern**: String/Simulation/Pattern Recognition
+- **First Attempt**: 2025-08-27
+- **Status**: ✅ Solved
+- **Attempts**: 1 (learned with comprehensive explanation and visualization)
+- **Solution Time**: ~90 minutes total (including study materials)
+- **Notes**: Initially confusing pattern, but clear once visualized. Key insights: zigzag movement with direction changes at boundaries, cycle length = 2×numRows-2. Implemented both StringBuilder array and mathematical approaches.
+- **Approach**: StringBuilder array simulation (intuitive) and mathematical pattern calculation (optimal)
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(n) for array approach, O(1) for mathematical
+- **Tags**: string-simulation, pattern-recognition, directional-movement, cycle-detection, visualization-helpful
+
+### Attempt History
+| Date | Time Taken | Approach | Result | Notes |
+|------|------------|----------|--------|-------|
+| 2025-08-27 | 90 min | Both StringBuilder and Math | ✅ | Comprehensive understanding with visualization and study materials |
+
+---
+
+## [238] Product of Array Except Self
+- **Difficulty**: Medium
+- **Pattern**: Arrays/Prefix Products
+- **First Attempt**: 2025-09-04 (22 hours ago)
+- **Status**: ✅ Solved
+- **Attempts**: 1
+- **Solution Time**: 2 ms runtime
+- **Notes**: Already had comprehensive solution materials in repository. Optimal O(n) solution using left and right products with O(1) extra space (not counting output array).
+- **Approach**: Two-pass algorithm - store left products in result array, then calculate right products on-the-fly
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(1) extra space
+- **Tags**: arrays, prefix-products, two-pass-algorithm, optimal-space, existing-solution
+
+### Attempt History
+| Date | Time Taken | Approach | Result | Notes |
+|------|------------|----------|--------|-------|
+| 2025-09-04 | Submitted only | Left/Right products | ✅ | 2 ms runtime, solution already existed in repo |
+
+---
+
+## [14] Longest Common Prefix
+- **Difficulty**: Easy
+- **Pattern**: String Processing/Vertical Scanning
+- **First Attempt**: 2025-09-04 (23 hours ago)
+- **Status**: ✅ Solved
+- **Attempts**: 1
+- **Solution Time**: 1 ms runtime
+- **Notes**: String processing problem using vertical scanning approach. Compare characters column by column across all strings until first mismatch found.
+- **Approach**: Vertical scanning - use first string as reference, compare character by character with all other strings
+- **Time Complexity**: O(S) where S is sum of all characters in all strings
+- **Space Complexity**: O(1) extra space
+- **Tags**: string-processing, vertical-scanning, character-comparison, early-termination
+
+### Attempt History
+| Date | Time Taken | Approach | Result | Notes |
+|------|------------|----------|--------|-------|
+| 2025-09-04 | Submitted only | Vertical scanning | ✅ | 1 ms runtime, clean implementation |
+
+---
+
+## [13] Roman to Integer
+- **Difficulty**: Easy
+- **Pattern**: String Processing/Hash Map
+- **First Attempt**: 2025-09-04 (23 hours ago)
+- **Status**: ✅ Solved
+- **Attempts**: 3 (improved from 11 ms to 7 ms)
+- **Solution Time**: 7 ms final runtime
+- **Notes**: String processing with subtractive cases. Key insight: traverse right-to-left, if current value < previous value then subtract (subtractive case), else add.
+- **Approach**: Right-to-left traversal with HashMap lookup, handle subtractive cases (IV, IX, XL, XC, CD, CM)
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(1) - fixed size hash map
+- **Tags**: string-processing, hashmap-lookup, subtractive-cases, right-to-left-traversal, roman-numerals
+
+### Attempt History
+| Date | Time Taken | Approach | Result | Notes |
+|------|------------|----------|--------|-------|
+| 2025-09-04 | Submitted | Right-to-left HashMap | ✅ | 11 ms runtime, initial solution |
+| 2025-09-04 | Submitted | Right-to-left HashMap | ✅ | 7 ms runtime, optimized |
+| 2025-09-04 | Submitted | Right-to-left HashMap | ✅ | 7 ms runtime, final submission |
+
+---
+
+## [12] Integer to Roman
+- **Difficulty**: Medium
+- **Pattern**: String Building/Greedy Algorithm
+- **First Attempt**: 2025-09-04 (estimated)
+- **Status**: ✅ Solved (Independent Solution!)
+- **Attempts**: 1 (self-solved, then optimized)
+- **Solution Time**: Self-solved independently
+- **Notes**: Excellent independent solution! Used smart first digit check (4 or 9) to separate basic symbols from subtractive cases. Working solution with clean structure, then learned greedy optimization. Shows significant problem-solving improvement.
+- **Approach**: Original - separate mappings with first digit check; Optimized - combined greedy approach
+- **Time Complexity**: O(1) - maximum 13 symbols possible
+- **Space Complexity**: O(1) - fixed size data structures
+- **Tags**: independent-solution, first-digit-check, greedy-optimization, problem-solving-growth, string-building
+
+### Attempt History
+| Date | Time Taken | Approach | Result | Notes |
+|------|------------|----------|--------|-------|
+| 2025-09-04 | Self-solved | First digit check with dual mappings | ✅ | Independent working solution - major milestone! |
+| 2025-09-04 | Study session | Learned greedy optimization | ✅ | Combined mappings for cleaner approach |
+
+---
+
+## [345] Reverse Vowels of a String
+- **Difficulty**: Easy
+- **Pattern**: Two Pointers
+- **First Attempt**: 2025-09-05 (estimated, from review)
+- **Status**: ✅ Solved (Memorized/Mastered)
+- **Attempts**: 1 (already mastered)
+- **Solution Time**: Already known - memorized solution
+- **Notes**: Excellent optimal solution! Perfect two-pointer implementation with Set lookup. Already interview-ready code with optimal O(n) time and space complexity. Planning multiple approach practice for interview preparation.
+- **Approach**: Two pointers from ends, Set for O(1) vowel lookup, in-place swapping
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(n) for char array (unavoidable due to String immutability)
+- **Tags**: two-pointers, memorized-solution, optimal-implementation, interview-ready, multiple-approach-practice
+
+### Attempt History
+| Date | Time Taken | Approach | Result | Notes |
+|------|------------|----------|--------|-------|
+| 2025-09-05 | Review only | Two pointers with Set lookup | ✅ | Already mastered - optimal solution, planning multi-approach practice |
+
+---
+
+## [125] Valid Palindrome
+- **Difficulty**: Easy
+- **Pattern**: Two Pointers
+- **First Attempt**: 2025-09-06
+- **Status**: ✅ Solved
+- **Attempts**: 1
+- **Solution Time**: ~20 minutes
+- **Notes**: Classic two pointer problem for string validation. Used left and right pointers converging toward middle, skipping non-alphanumeric characters and comparing case-insensitive.
+- **Approach**: Two pointers from ends, skip invalid characters, compare normalized characters
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(1)
+- **Tags**: two-pointers, string-validation, case-insensitive, character-filtering
+
+### Attempt History
+| Date | Time Taken | Approach | Result | Notes |
+|------|------------|----------|--------|-------|
+| 2025-09-06 | ~20 min | Two pointers with filtering | ✅ | Clean implementation, handled edge cases well |
+
+---
+
+## [392] Is Subsequence
+- **Difficulty**: Easy
+- **Pattern**: Two Pointers
+- **First Attempt**: 2025-09-07
+- **Status**: ✅ Solved
+- **Attempts**: 1
+- **Solution Time**: ~15 minutes
+- **Notes**: Two pointer tracking problem. One pointer for subsequence string, one for main string. Advance subsequence pointer only when characters match.
+- **Approach**: Two pointers tracking through both strings, advance subsequence pointer on match
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(1)
+- **Tags**: two-pointers, subsequence-matching, string-tracking, greedy-matching
+
+### Attempt History
+| Date | Time Taken | Approach | Result | Notes |
+|------|------------|----------|--------|-------|
+| 2025-09-07 | ~15 min | Two pointer tracking | ✅ | Straightforward implementation, good pattern recognition |
+
+---
+
+## [167] Two Sum II - Input Array Is Sorted
+- **Difficulty**: Medium
+- **Pattern**: Two Pointers
+- **First Attempt**: 2025-09-08
+- **Status**: ✅ Solved
+- **Attempts**: 1
+- **Solution Time**: ~25 minutes
+- **Notes**: Binary search variant using two pointers. Takes advantage of sorted array property - if sum too small move left pointer right, if too large move right pointer left.
+- **Approach**: Two pointers from ends, adjust based on sum comparison with target
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(1)
+- **Tags**: two-pointers, sorted-array, binary-search-variant, sum-problems
+
+### Attempt History
+| Date | Time Taken | Approach | Result | Notes |
+|------|------------|----------|--------|-------|
+| 2025-09-08 | ~25 min | Two pointers with sum comparison | ✅ | Excellent use of sorted array property |
+
+---
+
+## [15] 3Sum
+- **Difficulty**: Medium
+- **Pattern**: Two Pointers
+- **First Attempt**: 2025-09-09
+- **Status**: ✅ Solved
+- **Attempts**: 1
+- **Solution Time**: ~45 minutes
+- **Notes**: Complex two pointer problem requiring sorting and duplicate handling. For each element, use two pointers to find complementary pair. Skip duplicates at all levels to avoid duplicate triplets.
+- **Approach**: Sort array, fix first element, use two pointers for remaining pair, skip duplicates
+- **Time Complexity**: O(n²)
+- **Space Complexity**: O(1) excluding output array
+- **Tags**: two-pointers, triplet-finding, duplicate-handling, sorting-required, complex-two-pointers
+
+### Attempt History
+| Date | Time Taken | Approach | Result | Notes |
+|------|------------|----------|--------|-------|
+| 2025-09-09 | ~45 min | Sorted array + two pointers | ✅ | Challenging problem, handled duplicates correctly |
 
 ---

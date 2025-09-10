@@ -6,8 +6,8 @@
 
 ## Overall Progress
 - **Total Problems**: 150
-- **Completed**: 14
-- **Remaining**: 136
+- **Completed**: 24
+- **Remaining**: 126
 - **Current Streak**: 1 day
 - **Best Streak**: 6 days
 
@@ -62,7 +62,7 @@
 | 08/24 | Gas Station | Medium | Arrays/Greedy | ~90 min | ✅ | Debugged original solution, learned optimal O(n) greedy approach with mathematical insight |
 | 08/25 | | | | | | |
 | 08/26 | | | | | | |
-| 08/27 | | | | | | |
+| 08/27 | Zigzag Conversion | Medium | String/Simulation | ~90 min | ✅ | Pattern recognition with visualization, learned both simulation and mathematical approaches |
 | 08/28 | | | | | | |
 | 08/29 | | | | | | |
 | 08/30 | | | | | | |
@@ -72,14 +72,21 @@
 | Date | Problem | Difficulty | Pattern | Time | Status | Notes |
 |------|---------|------------|---------|------|--------|-------|
 | 09/01 | | | | | | |
-| 09/02 | | | | | | |
-| 09/03 | | | | | | |
-| 09/04 | | | | | | |
+| 09/02 | Merge Strings Alternately | Easy | String/Two Pointers | ~15 min | ✅ | Simple string manipulation problem |
+| 09/03 | Greatest Common Divisor of Strings | Easy | String/Math | ~20 min | ✅ | GCD pattern with string validation |
+| 09/04 | Product of Array Except Self | Medium | Arrays/Prefix Products | 2 ms | ✅ | Already solved - optimal O(n) solution with O(1) extra space |
+| 09/04 | Longest Common Prefix | Easy | String/Vertical Scanning | 1 ms | ✅ | String processing with character comparison |
+| 09/04 | Roman to Integer | Easy | String/Hash Map | 7 ms | ✅ | Right-to-left traversal with subtractive cases |
+| 09/04 | Integer to Roman | Medium | String/Greedy | Self-solved | ✅ | Independent solution with first digit check, optimized to greedy approach |
+| 09/05 | Reverse Vowels of a String | Easy | Two Pointers | Memorized | ✅ | Optimal two-pointer solution with Set lookup, ready for multiple approach practice |
 | 09/05 | | | | | | |
 | 09/06 | | | | | | |
 | 09/07 | | | | | | |
 | 09/08 | | | | | | |
-| 09/09 | | | | | | |
+| 09/06 | Valid Palindrome | Easy | Two Pointers | ~20 min | ✅ | Two pointer approach for string validation |
+| 09/07 | Is Subsequence | Easy | Two Pointers | ~15 min | ✅ | Two pointer tracking through strings |
+| 09/08 | Two Sum II - Input Array Is Sorted | Medium | Two Pointers | ~25 min | ✅ | Binary search variant with two pointers |
+| 09/09 | 3Sum | Medium | Two Pointers | ~45 min | ✅ | Complex two pointer problem with sorting and duplicate handling |
 | 09/10 | | | | | | |
 | 09/11 | | | | | | |
 | 09/12 | | | | | | |
