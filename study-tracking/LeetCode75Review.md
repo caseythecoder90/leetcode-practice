@@ -13,9 +13,9 @@
 ## Overall Progress
 - **Total Problems**: 75
 - **Review Cycles Completed**: 0
-- **Current Problem**: #10 (Two Pointers section)
-- **Current Streak**: 4 days
-- **Problems Reviewed**: 13/75 (Array/String complete, Two Pointers in progress)
+- **Current Problem**: #15 (Sliding Window section)
+- **Current Streak**: 5 days
+- **Problems Reviewed**: 15/75 (Array/String complete, Two Pointers and Sliding Window in progress)
 
 ## LeetCode 75 Problem List
 
@@ -35,11 +35,11 @@
 ### Two Pointers
 10. [🔄] Move Zeroes
 11. [🔄] Is Subsequence
-12. [🔄] Container With Most Water
+12. [✅] Container With Most Water
 13. [🔄] Max Number of K-Sum Pairs
 
 ### Sliding Window
-14. [ ] Maximum Average Subarray I
+14. [✅] Maximum Average Subarray I
 15. [ ] Maximum Number of Vowels in a Substring of Given Length
 16. [ ] Max Consecutive Ones III
 17. [ ] Longest Subarray of 1's After Deleting One Element

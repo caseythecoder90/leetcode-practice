@@ -30,11 +30,11 @@ This file tracks your progress on individual LeetCode problems. For each problem
 ## Problems by Difficulty
 
 ### Easy Problems ✅
-- Count: 13
+- Count: 14
 - Mastered: 1
 
 ### Medium Problems 🟡
-- Count: 22
+- Count: 23
 - Mastered: 0
 
 ### Hard Problems 🔴
@@ -742,5 +742,45 @@ This file tracks your progress on individual LeetCode problems. For each problem
 | Date | Time Taken | Approach | Result | Notes |
 |------|------------|----------|--------|-------|
 | 2025-09-09 | ~45 min | Sorted array + two pointers | ✅ | Challenging problem, handled duplicates correctly |
+
+---
+
+## [11] Container With Most Water
+- **Difficulty**: Medium
+- **Pattern**: Two Pointers
+- **First Attempt**: 2025-09-10
+- **Status**: ✅ Solved
+- **Attempts**: 1
+- **Solution Time**: ~30 minutes
+- **Notes**: Two pointer optimization problem. Start with widest container (pointers at ends), move pointer pointing to shorter line to potentially find taller line and larger area. Key insight: moving shorter line might improve, moving taller line only reduces width.
+- **Approach**: Two pointers from ends, greedy choice to move shorter line pointer
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(1)
+- **Tags**: two-pointers, optimization, greedy-choice, area-calculation, width-height-tradeoff
+
+### Attempt History
+| Date | Time Taken | Approach | Result | Notes |
+|------|------------|----------|--------|-------|
+| 2025-09-10 | ~30 min | Two pointers greedy | ✅ | Good problem for understanding optimization with two pointers |
+
+---
+
+## [643] Maximum Average Subarray I
+- **Difficulty**: Easy
+- **Pattern**: Sliding Window (Fixed Size)
+- **First Attempt**: 2025-09-10
+- **Status**: ✅ Solved
+- **Attempts**: 1
+- **Solution Time**: ~20 minutes
+- **Notes**: Classic fixed-size sliding window. Initially used front/back pointer tracking which works but is unnecessarily complex. Cleaner approach: use single index with nums[i] - nums[i-k] for sliding. Variable naming could be improved (used 'max' for sum).
+- **Approach**: Fixed window sliding - calculate initial sum, slide by removing old and adding new element
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(1)
+- **Tags**: sliding-window, fixed-size-window, running-sum, cleaner-code-possible, leetcode-75
+
+### Attempt History
+| Date | Time Taken | Approach | Result | Notes |
+|------|------------|----------|--------|-------|
+| 2025-09-10 | ~20 min | Fixed sliding window | ✅ | Correct but could use cleaner implementation |
 
 ---

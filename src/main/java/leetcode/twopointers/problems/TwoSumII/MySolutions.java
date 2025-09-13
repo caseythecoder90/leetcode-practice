@@ -1,3 +1,5 @@
+package leetcode.twopointers.problems.TwoSumII;
+
 public class MySolutions {
 
     /**
