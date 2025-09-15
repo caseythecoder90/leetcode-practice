@@ -34,7 +34,7 @@ This file tracks your progress on individual LeetCode problems. For each problem
 - Mastered: 1
 
 ### Medium Problems 🟡
-- Count: 23
+- Count: 25
 - Mastered: 0
 
 ### Hard Problems 🔴
@@ -782,5 +782,44 @@ This file tracks your progress on individual LeetCode problems. For each problem
 | Date | Time Taken | Approach | Result | Notes |
 |------|------------|----------|--------|-------|
 | 2025-09-10 | ~20 min | Fixed sliding window | ✅ | Correct but could use cleaner implementation |
+
+---
+## [1456] Maximum Number of Vowels in a Substring of Given Length
+- **Difficulty**: Medium
+- **Pattern**: Sliding Window (Fixed Size)
+- **First Attempt**: 2025-09-12
+- **Status**: ✅ Solved
+- **Attempts**: 1
+- **Solution Time**: ~25 minutes
+- **Notes**: Fixed-size sliding window counting vowels. Key optimization: early termination if window contains all vowels (k vowels). Implemented three approaches: HashSet (clean), bit manipulation (performance), array lookup (fastest).
+- **Approach**: Initialize first window vowel count, slide by adding new character and removing old character
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(1)
+- **Tags**: sliding-window, fixed-size-window, character-counting, early-termination, multiple-approaches, leetcode-75
+
+### Attempt History
+| Date | Time Taken | Approach | Result | Notes |
+|------|------------|----------|--------|-------|
+| 2025-09-12 | ~25 min | Fixed sliding window with Set | ✅ | Good solution, added optimizations |
+
+---
+
+## [1004] Max Consecutive Ones III
+- **Difficulty**: Medium
+- **Pattern**: Sliding Window (Variable Size)
+- **First Attempt**: 2025-09-12
+- **Status**: ✅ Solved
+- **Attempts**: 1
+- **Solution Time**: ~40 minutes
+- **Notes**: Tricky variable sliding window. Key insight: reframe problem from "flip k zeros" to "find longest subarray with at most k zeros". Expand window always, contract when zero count exceeds k. The "budget" mental model helps - k is your budget for zeros.
+- **Approach**: Two pointers, expand right always, contract left when zeros > k, track max window size
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(1)
+- **Tags**: sliding-window, variable-size-window, reframing-problems, at-most-k-pattern, tricky-insight, leetcode-75
+
+### Attempt History
+| Date | Time Taken | Approach | Result | Notes |
+|------|------------|----------|--------|-------|
+| 2025-09-12 | ~40 min | Variable sliding window | ✅ | Initially struggled, reframing was key |
 
 ---
