@@ -30,11 +30,11 @@ This file tracks your progress on individual LeetCode problems. For each problem
 ## Problems by Difficulty
 
 ### Easy Problems ✅
-- Count: 14
-- Mastered: 1
+- Count: 17
+- Mastered: 2
 
 ### Medium Problems 🟡
-- Count: 25
+- Count: 27
 - Mastered: 0
 
 ### Hard Problems 🔴
@@ -821,5 +821,65 @@ This file tracks your progress on individual LeetCode problems. For each problem
 | Date | Time Taken | Approach | Result | Notes |
 |------|------------|----------|--------|-------|
 | 2025-09-12 | ~40 min | Variable sliding window | ✅ | Initially struggled, reframing was key |
+
+---
+
+## [290] Word Pattern
+- **Difficulty**: Easy
+- **Pattern**: HashMap/Bijection
+- **First Attempt**: 2025-09-19
+- **Status**: ✅ Solved
+- **Attempts**: 1
+- **Solution Time**: ~15 minutes
+- **Notes**: Bijection pattern matching problem. Key insight: need bidirectional mapping between pattern characters and words. Must check both pattern→word and word→pattern to ensure 1-to-1 correspondence. Part of LeetCode 150 interview prep.
+- **Approach**: Two HashMaps for bidirectional mapping, verify consistency for each character-word pair
+- **Time Complexity**: O(n) where n is length of pattern
+- **Space Complexity**: O(n) for storing mappings
+- **Tags**: hashmap, bijection, pattern-matching, string-processing, leetcode-150
+
+### Attempt History
+| Date | Time Taken | Approach | Result | Notes |
+|------|------------|----------|--------|-------|
+| 2025-09-19 | ~15 min | Two HashMaps | ✅ | Clean implementation with bidirectional check |
+
+---
+
+## [205] Isomorphic Strings
+- **Difficulty**: Easy
+- **Pattern**: HashMap/Bijection
+- **First Attempt**: 2025-09-19
+- **Status**: ✅ Solved
+- **Attempts**: 1
+- **Solution Time**: ~10 minutes
+- **Notes**: Character substitution cipher problem. Similar to Word Pattern but maps characters to characters. Requires bidirectional mapping to ensure no two characters map to same character. Part of LeetCode 150 interview prep.
+- **Approach**: Two HashMaps for s→t and t→s mapping, check consistency at each position
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(k) where k is number of unique characters
+- **Tags**: hashmap, bijection, isomorphic-mapping, character-substitution, leetcode-150
+
+### Attempt History
+| Date | Time Taken | Approach | Result | Notes |
+|------|------------|----------|--------|-------|
+| 2025-09-19 | ~10 min | Two HashMaps | ✅ | Quick solve, pattern recognition from similar problems |
+
+---
+
+## [242] Valid Anagram
+- **Difficulty**: Easy
+- **Pattern**: HashMap/Frequency Counting
+- **First Attempt**: 2025-09-19
+- **Status**: ⭐ Mastered
+- **Attempts**: 1
+- **Solution Time**: ~8 minutes
+- **Notes**: Classic frequency counting problem. Optimal solution uses array for lowercase English letters. Key insight: anagrams have identical character frequencies. Can use single array with increment/decrement pattern. Part of LeetCode 150 interview prep.
+- **Approach**: Array frequency counter, increment for s, decrement for t, check all zeros
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(1) - fixed size array[26]
+- **Tags**: frequency-counting, anagram, array-optimization, mastered, leetcode-150
+
+### Attempt History
+| Date | Time Taken | Approach | Result | Notes |
+|------|------------|----------|--------|-------|
+| 2025-09-19 | ~8 min | Array frequency counter | ✅ | Optimal solution, very confident with this pattern |
 
 ---
