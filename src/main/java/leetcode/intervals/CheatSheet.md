@@ -125,13 +125,13 @@ public int findMinArrowShots(int[][] points) {
 public int[][] insert(int[][] intervals, int[] newInterval) {
     List<int[]> result = new ArrayList<>();
     int i = 0;
-    
+
     // Add all intervals that end before new interval starts
     while (i < intervals.length && intervals[i][1] < newInterval[0]) {
         result.add(intervals[i]);
         i++;
     }
-    
+
     // Merge overlapping intervals
     while (i < intervals.length && intervals[i][0] <= newInterval[1]) {
         newInterval[0] = Math.min(newInterval[0], intervals[i][0]);
@@ -139,14 +139,38 @@ public int[][] insert(int[][] intervals, int[] newInterval) {
         i++;
     }
     result.add(newInterval);
-    
+
     // Add remaining intervals
     while (i < intervals.length) {
         result.add(intervals[i]);
         i++;
     }
-    
+
     return result.toArray(new int[result.size()][]);
+}
+```
+
+### 8. Summary Ranges (Consecutive Numbers)
+```java
+public List<String> summaryRanges(int[] nums) {
+    List<String> result = new ArrayList<>();
+    if (nums.length == 0) return result;
+
+    int start = 0;
+
+    for (int i = 0; i < nums.length; i++) {
+        // Check if at end OR next isn't consecutive
+        if (i == nums.length - 1 || nums[i] + 1 != nums[i + 1]) {
+            if (start == i) {
+                result.add(String.valueOf(nums[start]));
+            } else {
+                result.add(nums[start] + "->" + nums[i]);
+            }
+            start = i + 1;
+        }
+    }
+
+    return result;
 }
 ```
 

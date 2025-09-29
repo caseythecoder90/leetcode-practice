@@ -110,6 +110,31 @@ while (right < s.length()) {
 }
 ```
 
+### 6. HashSet for O(1) Existence Check
+```java
+// Finding consecutive sequences
+Set<Integer> numSet = new HashSet<>();
+for (int num : nums) {
+    numSet.add(num);
+}
+
+// Check if number is start of sequence
+for (int num : numSet) {
+    if (!numSet.contains(num - 1)) {
+        // This is a sequence start
+        int currentNum = num;
+        int length = 1;
+
+        while (numSet.contains(currentNum + 1)) {
+            currentNum++;
+            length++;
+        }
+
+        maxLength = Math.max(maxLength, length);
+    }
+}
+```
+
 ## Common Operations Reference
 
 ### HashMap Methods
@@ -223,6 +248,37 @@ public List<List<String>> groupAnagrams(String[] strs) {
 }
 ```
 
+### Longest Consecutive Sequence (128)
+```java
+public int longestConsecutive(int[] nums) {
+    if (nums.length == 0) return 0;
+
+    Set<Integer> numSet = new HashSet<>();
+    for (int num : nums) {
+        numSet.add(num);
+    }
+
+    int longest = 0;
+
+    for (int num : numSet) {
+        // Only start counting from sequence starts
+        if (!numSet.contains(num - 1)) {
+            int currentNum = num;
+            int currentLength = 1;
+
+            while (numSet.contains(currentNum + 1)) {
+                currentNum++;
+                currentLength++;
+            }
+
+            longest = Math.max(longest, currentLength);
+        }
+    }
+
+    return longest;
+}
+```
+
 ## Complexity Quick Reference
 
 | Operation | HashMap | Array | Sorting |
@@ -293,3 +349,4 @@ while (it.hasNext()) {
 | Deduplication | Remove duplicates | HashSet |
 | Pattern Match | Same structure | Transform to canonical form |
 | Sliding Window | Substring problems | Two pointers + HashMap |
+| Consecutive Sequence | Find sequences in O(n) | HashSet + sequence start check |
