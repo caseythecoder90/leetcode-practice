@@ -20,6 +20,7 @@ public class HouseRobber {
      * Base Cases: dp[0] = nums[0], dp[1] = max(nums[0], nums[1])
      */
     public int rob(int[] nums) {
+
         // Edge case: single house
         if (nums.length == 1) {
             return nums[0];
