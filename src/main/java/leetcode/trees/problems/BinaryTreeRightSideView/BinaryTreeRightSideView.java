@@ -104,34 +104,55 @@ public class BinaryTreeRightSideView {
         System.out.println("DFS Result: " + solution.rightSideViewDFS(root1));
         System.out.println();
         
-        // Test Case 2: [1,null,3]
+        // Test Case 2: [1,2,3,4,null,null,null,5]
+        //     1
+        //    / \
+        //   2   3
+        //  /
+        // 4
+        //  \
+        //   5
+        // Expected: [1,3,4,5]
+        TreeNode root2 = new TreeNode(1);
+        root2.left = new TreeNode(2);
+        root2.right = new TreeNode(3);
+        root2.left.left = new TreeNode(4);
+        root2.left.left.right = new TreeNode(5);
+
+        System.out.println("Test Case 2:");
+        System.out.println("Expected: [1, 3, 4, 5]");
+        System.out.println("BFS Result: " + solution.rightSideView(root2));
+        System.out.println("DFS Result: " + solution.rightSideViewDFS(root2));
+        System.out.println();
+
+        // Test Case 3: [1,null,3]
         //   1
         //    \
         //     3
         // Expected: [1,3]
-        TreeNode root2 = new TreeNode(1);
-        root2.right = new TreeNode(3);
-        
-        System.out.println("Test Case 2:");
-        System.out.println("Expected: [1, 3]");
-        System.out.println("BFS Result: " + solution.rightSideView(root2));
-        System.out.println("DFS Result: " + solution.rightSideViewDFS(root2));
-        System.out.println();
-        
-        // Test Case 3: []
-        // Expected: []
+        TreeNode root3 = new TreeNode(1);
+        root3.right = new TreeNode(3);
+
         System.out.println("Test Case 3:");
+        System.out.println("Expected: [1, 3]");
+        System.out.println("BFS Result: " + solution.rightSideView(root3));
+        System.out.println("DFS Result: " + solution.rightSideViewDFS(root3));
+        System.out.println();
+
+        // Test Case 4: []
+        // Expected: []
+        System.out.println("Test Case 4:");
         System.out.println("Expected: []");
         System.out.println("BFS Result: " + solution.rightSideView(null));
         System.out.println("DFS Result: " + solution.rightSideViewDFS(null));
         System.out.println();
-        
-        // Test Case 4: Single node [1]
+
+        // Test Case 5: Single node [1]
         // Expected: [1]
-        TreeNode root4 = new TreeNode(1);
-        System.out.println("Test Case 4:");
+        TreeNode root5 = new TreeNode(1);
+        System.out.println("Test Case 5:");
         System.out.println("Expected: [1]");
-        System.out.println("BFS Result: " + solution.rightSideView(root4));
-        System.out.println("DFS Result: " + solution.rightSideViewDFS(root4));
+        System.out.println("BFS Result: " + solution.rightSideView(root5));
+        System.out.println("DFS Result: " + solution.rightSideViewDFS(root5));
     }
 }

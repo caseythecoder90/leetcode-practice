@@ -27,6 +27,27 @@ Right side view: 1 → 3 → 4
 
 **Example 2:**
 ```
+Input: root = [1,2,3,4,null,null,null,5]
+Output: [1,3,4,5]
+
+Tree visualization:
+    1
+   / \
+  2   3
+ /
+4
+ \
+  5
+
+Right side view: 1 → 3 → 4 → 5
+Explanation: Level 0: 1
+             Level 1: 3 (rightmost)
+             Level 2: 4 (only node at this level)
+             Level 3: 5 (only node at this level)
+```
+
+**Example 3:**
+```
 Input: root = [1,null,3]
 Output: [1,3]
 
@@ -38,7 +59,7 @@ Tree visualization:
 Right side view: 1 → 3
 ```
 
-**Example 3:**
+**Example 4:**
 ```
 Input: root = []
 Output: []
