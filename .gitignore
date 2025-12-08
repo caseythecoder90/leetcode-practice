@@ -39,3 +39,5 @@ build/
 
 ### Java ###
 *.class
+
+src/main/java/examples/*
